@@ -7,17 +7,6 @@ export function updateData(user){
 	};
 }
 
-export function updateData2(){
-	return {
-		type: constant.SHOW_USER,
-		user: {
-			'name' : "葛夫锋",
-			'age' : 18,
-			'job' :'developer'
-		}
-	};
-}
-
 export function requestData(){
 	return dispatch => {
 		let url = 'https://my.oschina.net/gef';

@@ -17,12 +17,12 @@ import Root from './app/root';
 import rootReducers from './app/reducers/baseReducers';
 
 
-let store = createStore(rootReducers,applyMiddleware(thunk));
+var store = createStore(rootReducers,applyMiddleware(thunk));
 
 function App(props){
   return (
     <Provider store = {store}>
-        <Root/>
+        <Root {...this.props}/>
     </Provider>
   );
 };
